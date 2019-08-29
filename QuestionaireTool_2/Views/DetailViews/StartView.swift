@@ -20,17 +20,17 @@ struct StartView: View {
             
             Text("Szenarien Auswahl:")
             HStack {
-                Picker(selection: $model.scenario_one[0], label: Text("")) {
+                Picker(selection: $model.scenario[0], label: Text("")) {
                     Text("0").tag(0)
                     Text("1").tag(1)
                     Text("2").tag(2)
                 }.pickerStyle(PopUpButtonPickerStyle())
-                Picker(selection: $model.scenario_one[1], label: Text("")) {
+                Picker(selection: $model.scenario[1], label: Text("")) {
                     Text("0").tag(0)
                     Text("1").tag(1)
                     Text("2").tag(2)
                 }.pickerStyle(PopUpButtonPickerStyle())
-                Picker(selection: $model.scenario_one[2], label: Text("")) {
+                Picker(selection: $model.scenario[2], label: Text("")) {
                     Text("0").tag(0)
                     Text("1").tag(1)
                     Text("2").tag(2)

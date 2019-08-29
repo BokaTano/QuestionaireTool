@@ -142,7 +142,12 @@ extension ResultView {
             results[model.columnTitles[index+61]] = String(result)
         }
         
-        results[self.model.columnTitles[64]] = model.name
+        results[self.model.columnTitles[64]] = model.name //name
+        
+        for (index, result) in self.model.scenario.enumerated() { //scenarios
+            results[self.model.columnTitles[index+65]] = String(result)
+        }
+        
         self.model.data.append(results)
     }
     
@@ -255,6 +260,11 @@ extension ResultView {
         
         //        name
         self.model.name = results[self.model.columnTitles[64]] ?? "unknown"
+        
+        //        scenario
+        for index in 0...2 {
+            self.model.scenario[index] = Int(results[self.model.columnTitles[index+65]] ?? "0") ?? 0
+        }
     }
     
     

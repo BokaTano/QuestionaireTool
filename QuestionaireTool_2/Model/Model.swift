@@ -12,7 +12,7 @@ final class Model: ObservableObject {
     @Published var data:[[String:String]] = []
     
     @Published var name = "Lich"
-    @Published var scenario_one = [0,1,2]
+    @Published var scenario = [0,1,2]
     
     //results
     @Published var knowledge = 2
@@ -37,7 +37,7 @@ final class Model: ObservableObject {
                         "use1.0", "use1.1", "use1.2", "use1.3", "use1.4", "use1.5", "use1.6", "use1.7", "use1.8","use1.9",
                         "use2.0", "use2.1", "use2.2", "use2.3", "use2.4", "use2.5", "use2.6", "use2.7", "use2.8","use2.9",
                         "use3.0", "use1.1", "use3.2", "use3.3", "use3.4", "use3.5", "use3.6", "use3.7", "use3.8","use3.9",
-                        "judging0", "judging1", "judging2", "name"]
+                        "judging0", "judging1", "judging2", "name", "scenario1", "scenario2", "scenario3"]
     
     let susStatements = ["Ich denke, dass ich diese App gerne regelmäßig nutze.",
                          "Ich fand die App unnötig komplex.",
@@ -69,14 +69,7 @@ final class Model: ObservableObject {
     
 }
 
-struct Results: Codable {
-    var knowledge = 0
-    var susResults = [2,2,2,2,2,2,2,2,2,2]
-    var useResults_1 = [2,2,2,2,2,2,2,2,2,2]
-    var useResults_2 = [2,2,2,2,2,2,2,2,2,2]
-    var useResults_3 = [2,2,2,2,2,2,2,2,2,2]
-    var judging = [0,0,0]
-}
+
 
 
 enum DetailViewType: String, Equatable {
@@ -97,8 +90,4 @@ enum DetailViewType: String, Equatable {
     case use_scale_third_3 = "USE-Skala 3.3"
     case finale_opinion = "Finale Meinung"
     case results = "Ergebnisse"
-}
-
-class User: ObservableObject {
-    
 }

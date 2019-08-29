@@ -22,9 +22,11 @@ struct USEView: View {
                 Spacer()
                 
                 Text(model.techniques[useIndex-1][questionIndex])
+                    .font(.headline)
+                    .foregroundColor(Color.blue)
             }
             
-            Group{
+            Group {
                 if questionIndex == 0 {
                     ForEach(0...2, id: \.self) { index in
                         Group {

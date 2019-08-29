@@ -25,6 +25,7 @@
 		7A383B372313D93000FD464D /* JudgingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A383B2C2313D93000FD464D /* JudgingView.swift */; };
 		7A383B382313D93000FD464D /* USEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A383B2D2313D93000FD464D /* USEView.swift */; };
 		7A383B422313DA3500FD464D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A383B412313DA3500FD464D /* Model.swift */; };
+		7AA258CA2313EEF200DBFB1A /* SavableObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA258C92313EEF200DBFB1A /* SavableObjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		7A383B2C2313D93000FD464D /* JudgingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JudgingView.swift; sourceTree = "<group>"; };
 		7A383B2D2313D93000FD464D /* USEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USEView.swift; sourceTree = "<group>"; };
 		7A383B412313DA3500FD464D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7AA258C92313EEF200DBFB1A /* SavableObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavableObjects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				7A383B412313DA3500FD464D /* Model.swift */,
+				7AA258C92313EEF200DBFB1A /* SavableObjects.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				7A383B322313D93000FD464D /* KnowledgeView.swift in Sources */,
 				7A383AF32313D7EF00FD464D /* AppDelegate.swift in Sources */,
 				7A383B302313D93000FD464D /* DetailView.swift in Sources */,
+				7AA258CA2313EEF200DBFB1A /* SavableObjects.swift in Sources */,
 				7A383B2F2313D93000FD464D /* LikertScale.swift in Sources */,
 				7A383B312313D93000FD464D /* CurrentResultsView.swift in Sources */,
 			);

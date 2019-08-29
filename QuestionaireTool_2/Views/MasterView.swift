@@ -36,12 +36,10 @@ struct MasterView: View {
                 .padding()
             
             List(selection: $selection) {
-//                Section(header: Text("Erster Schritt")) {
-//                    Text(names[0]).tag(names[0])                //Start
-//                }
                 Section(header: Text("Zweiter Schritt")) {
                     Text(names[1]).tag(names[1])                //Bekanntheitsgrad
                 }
+                
                 Section(header: Text("Erster Durchlauf")) {
                     Text(names[2]).tag(names[2])
                     
@@ -86,7 +84,7 @@ struct MasterView: View {
     func resetResults() {
         self.model.name = ""
         self.model.knowledge = 2
-        self.model.scenario_one = [0,1,2]
+        self.model.scenario = [0,1,2]
         
         for index in 0...9 {
             self.model.susResults_1[index] = 2
